@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-magenta: #880E4F;
+  --color-magenta-light: #AD1457;
+  --color-teal: #006064;
+  --color-teal-dark: #004D40;
+  --color-gold: #D4AF37;
+  --color-gold-light: #FFD700;
+  --color-cream: #FFFDE7;
+
+  --font-brand: "Great Vibes", cursive;
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-teal-dark font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-magenta;
+  }
+}
+
+.hero-pattern {
+  background: linear-gradient(rgba(136, 14, 79, 0.9), rgba(0, 96, 100, 0.9)),
+              url('https://picsum.photos/seed/indian-silk/1920/1080?blur=5');
+  background-size: cover;
+}
+
+.text-gradient-festive {
+  @apply bg-gradient-to-r from-magenta via-gold to-teal bg-clip-text text-transparent;
+}
+
+.btn-royal {
+  @apply px-8 py-3.5 bg-magenta text-white font-display uppercase tracking-widest text-xs rounded-full transition-all hover:bg-magenta-light hover:shadow-[0_0_20px_rgba(136,14,79,0.4)] active:scale-95 disabled:opacity-50;
+}
+
+.btn-outline-royal {
+  @apply px-8 py-3.5 border-2 border-gold text-gold font-display uppercase tracking-widest text-xs rounded-full transition-all hover:bg-gold hover:text-white hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] active:scale-95 disabled:opacity-50;
+}
+
+.card-festive {
+  @apply bg-white border-t-8 border-magenta p-8 shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl;
+}
