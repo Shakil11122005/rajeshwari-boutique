@@ -14,7 +14,7 @@ export const About = () => (
             <p>Our founder believed that fashion is not just about clothes; it's about confidence and empowering women. This philosophy drives our training center, where we've helped hundreds of women gain financial independence through skill-building.</p>
           </div>
           <div className="mt-12 flex gap-12">
-            <div><span className="block text-4xl font-display text-magenta font-bold">10+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Years Experience</span></div>
+            <div><span className="block text-4xl font-display text-magenta font-bold">16+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Years Experience</span></div>
             <div><span className="block text-4xl font-display text-magenta font-bold">500+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Happy Clients</span></div>
             <div><span className="block text-4xl font-display text-magenta font-bold">1000+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Design Collections</span></div>
           </div>
