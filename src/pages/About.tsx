@@ -7,7 +7,7 @@ export const About = () => (
       <div className="flex flex-col lg:flex-row items-center gap-16 mb-24">
         <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-1/2">
           <h1 className="text-5xl font-display uppercase tracking-widest mb-4 text-magenta font-bold">Our Story</h1>
-          <h2 className="text-gold font-brand text-4xl mb-8">Established in 2015</h2>
+          <h2 className="text-gold font-brand text-4xl mb-8">Established in 2010</h2>
           <div className="space-y-6 text-teal-dark font-sans leading-relaxed italic text-lg opacity-90">
             <p>Rajeshwari Boutique & Aari Works was born out of a passion for traditional South Indian craftsmanship and a vision to blend it with modern fashion trends.</p>
             <p>What started as a small home-based project has now evolved into a premier destination for women's designer wear and a thriving training academy. We specialize in bringing intricate Aari embroidery to life, turning every garment into a work of art.</p>
@@ -15,13 +15,13 @@ export const About = () => (
           </div>
           <div className="mt-12 flex gap-12">
             <div><span className="block text-4xl font-display text-magenta font-bold">10+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Years Experience</span></div>
-            <div><span className="block text-4xl font-display text-magenta font-bold">5000+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Happy Clients</span></div>
-            <div><span className="block text-4xl font-display text-magenta font-bold">25+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Expert Artisans</span></div>
+            <div><span className="block text-4xl font-display text-magenta font-bold">500+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Happy Clients</span></div>
+            <div><span className="block text-4xl font-display text-magenta font-bold">1000+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Design Collections</span></div>
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-1/2 relative">
           <div className="bg-teal/10 w-full h-[500px] rounded-3xl relative z-0 translate-x-6 translate-y-6 border-2 border-teal/20"></div>
-          <img src="/images/rajeshwari-logo.jpg" alt="Rajeshwari Boutique & Aari Works Logo" className="absolute inset-0 w-full h-[500px] object-contain rounded-3xl z-10 shadow-2xl border-2 border-magenta/20 bg-[#3a0a1a] p-8" />
+          <img src="https://picsum.photos/seed/tailoring-boutique/800/1000" alt="Founder Work" className="absolute inset-0 w-full h-[500px] object-cover rounded-3xl z-10 shadow-2xl border-2 border-magenta/20" referrerPolicy="no-referrer" />
         </motion.div>
       </div>
 
