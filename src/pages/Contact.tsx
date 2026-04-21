@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Phone, Mail, MapPin, MessageSquare, Clock, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageSquare, Clock, ArrowRight, Star } from 'lucide-react';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -36,7 +36,7 @@ export const Contact = () => {
             <div className="space-y-8">
               {[
                 { icon: Phone, title: "Phone", content: "+91 9698615411", sub: "Mon-Sat: 09:00 AM - 8:00 PM" },
-                { icon: Mail, title: "Email", content: "rajeshwariboutique.aariworks@gmail.com", sub: "Response within 24 hours" },
+                { icon: Mail, title: "Email", content: "shakilbharati@gmail.com", sub: "Response within 24 hours" },
                 { icon: MapPin, title: "Address", content: "Rajeshwari boutique & aari work", sub: "RVC5+WMX, Mettur, Tamil Nadu 636404" }
               ].map((item, idx) => (
                 <div key={idx} className="flex items-start space-x-6">
@@ -90,16 +90,48 @@ export const Contact = () => {
           </motion.div>
         </div>
 
-        <div className="mt-24 h-[400px] bg-cream border-2 border-magenta/20 shadow-2xl relative rounded-3xl overflow-hidden">
-           <iframe 
-            src="https://www.google.com/maps?q=Rajeshwari+boutique+%26+aari+work,+RVC5%2BWMX,+Mettur,+Tamil+Nadu+636404&output=embed" 
-            className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700"
-            title="Boutique Location"
-            loading="lazy"
-          ></iframe>
+        <div className="mt-24 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+          <div className="lg:col-span-2 relative h-[500px] rounded-[3rem] overflow-hidden shadow-2xl border-4 border-magenta/5 group p-2">
+            <div className="absolute inset-0 bg-magenta/5 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.456382103328!2d77.8007252!3d11.7820755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba92966f5ad1fbe%3A0xcc64861e62b075f1!2sRajeshwari%20boutique%20%26%20aari%20work!5e0!3m2!1sen!2sin!4v1713700000000!5m2!1sen!2sin"
+              className="w-full h-full rounded-[2.5rem] grayscale group-hover:grayscale-0 transition-all duration-700"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          
+          <div className="card-festive p-10 flex flex-col justify-center space-y-8 bg-white/50 backdrop-blur-sm">
+            <div className="text-center">
+              <Star className="text-gold mx-auto mb-4 animate-pulse" size={40} fill="currentColor" />
+              <h4 className="text-2xl font-display text-magenta font-bold mb-2">Share Your Experience</h4>
+              <p className="text-sm text-teal-dark font-sans italic opacity-70">Your reviews help us grow and reach more fashion enthusiasts!</p>
+            </div>
+            
+            <div className="space-y-4">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Rajeshwari+boutique+%26+aari+work+Mettur"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-royal w-full flex items-center justify-center gap-2 group text-sm"
+              >
+                <MapPin size={18} className="group-hover:animate-bounce" />
+                Find Us on Maps
+              </a>
+              <a
+                href="https://www.google.com/maps/place/Rajeshwari+boutique+%26+aari+work/@11.7820755,77.7981503,17z/data=!4m8!3m7!1s0x3ba92966f5ad1fbe:0xcc64861e62b075f1!8m2!3d11.7820755!4d77.8007252!9m1!1b1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline-royal w-full border-gold text-gold flex items-center justify-center gap-2 group text-sm"
+              >
+                <Star size={18} className="group-hover:fill-gold transition-colors" />
+                Leave a Review
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
-};
-
