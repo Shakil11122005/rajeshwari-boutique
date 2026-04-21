@@ -96,9 +96,9 @@ export const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               { 
-                text: "The Aari work on my wedding blouse was simply breathtaking. Every guest asked about the boutique. Definitely recommended!",
-                author: "Priya Lakshmi",
-                role: "Happy Bride"
+                text: "I never visited to her shop but she satisfied me with her work each and every time.Either suit or blouse she is perfect and make me happy always. Definitely recommended!",
+                author: "Priyanka",
+                role: "Client"
               },
               { 
                 text: "Joining the Aari training was the best decision. The instructors are so patient and skilled. I now run my own small business.",
