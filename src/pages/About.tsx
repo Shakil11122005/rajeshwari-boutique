@@ -21,19 +21,7 @@ export const About = () => (
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-1/2 relative">
           <div className="bg-teal/10 w-full h-[500px] rounded-3xl relative z-0 translate-x-6 translate-y-6 border-2 border-teal/20"></div>
-         <img 
-              src="https://images.unsplash.com/photo-1490481651871-ab68624d5517?auto=format&fit=crop&q=80&w=800&h=1200" 
-              alt="Luxury Boutique" 
-              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
-              referrerPolicy="no-referrer"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                const parent = e.currentTarget.parentElement;
-                if (parent) {
-                  const fallback = parent.querySelector('.fallback-placeholder');
-                  fallback?.classList.remove('hidden');
-                }
-              }}
+        <img src="/images/rajeshwari-logo.jpg" alt="Rajeshwari Boutique & Aari Works Logo" className="absolute inset-0 w-full h-[500px] object-contain rounded-3xl z-10 shadow-2xl border-2 border-magenta/20 bg-[#3a0a1a] p-8" />
         </motion.div>
       </div>
 
