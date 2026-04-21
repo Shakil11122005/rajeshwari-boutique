@@ -17,13 +17,13 @@ export const Training = () => {
       title: "Hand Embroidery (Aari Work)",
       levels: ["Basic", "Advanced", "Professional"],
       duration: "1 - 3 Months",
-      benefits: ["Individual Attention", "Materials Provided", "Certification", "Placement Support"]
+      benefits: ["Individual Attention", "Materials needs to own", "Be on the time", "Need to practice"]
     },
     {
       title: "Designer Tailoring",
       levels: ["Blouse Mastery", "Ethnic Wear", "Kids Wear"],
       duration: "2 - 4 Months",
-      benefits: ["Pattern Making", "Perfect Fitting Techniques", "Industrial Knowledge", "Live Projects"]
+      benefits: ["Pattern Making", "Perfect Fitting Techniques", "Individual Attention", "Materials needs to own"]
     }
   ];
 
@@ -58,7 +58,7 @@ export const Training = () => {
           >
             <GraduationCap className="text-magenta" size={32} />
           </motion.div>
-          <h1 className="text-5xl font-display uppercase tracking-widest mb-4 text-magenta">Training Academy</h1>
+          <h1 className="text-5xl font-display uppercase tracking-widest mb-4 text-magenta">Training</h1>
           <p className="text-gold font-brand text-2xl">Shape Your Career in Fashion</p>
           <div className="w-24 h-px bg-gradient-to-r from-magenta to-teal mx-auto mt-8"></div>
         </header>
@@ -86,7 +86,7 @@ export const Training = () => {
                   </div>
                   <div className="flex items-center space-x-2 text-teal-dark opacity-80">
                     <Users size={16} className="text-magenta" />
-                    <span className="text-sm font-sans">Batch: 5-10 Students</span>
+                    <span className="text-sm font-sans">Batch: 5 Students</span>
                   </div>
                 </div>
 
@@ -105,18 +105,18 @@ export const Training = () => {
 
             <div className="bg-teal-dark p-10 text-cream rounded-3xl shadow-2xl relative overflow-hidden">
                <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
-              <h3 className="font-display text-2xl mb-6 tracking-widest text-gold uppercase">Why Choose Our Academy?</h3>
+              <h3 className="font-display text-2xl mb-6 tracking-widest text-gold uppercase">Why Choose Us ?</h3>
               <p className="text-sm leading-relaxed opacity-80 mb-8 italic font-sans">
                 Our mission is to empower women by providing them with the professional tools and techniques needed to excel. With a legacy of artistry and 100% practical focus, we turn passion into profitable careers.
               </p>
               <div className="flex items-center justify-between border-t border-white/10 pt-8">
                 <div className="flex flex-col">
-                  <span className="text-3xl font-display text-gold font-bold">500+</span>
+                  <span className="text-3xl font-display text-gold font-bold">50+</span>
                   <span className="text-[10px] uppercase tracking-widest font-sans font-bold opacity-60">Success Stories</span>
                 </div>
                 <div className="flex flex-col text-right">
-                   <span className="text-3xl font-display text-gold font-bold">Certified</span>
-                  <span className="text-[10px] uppercase tracking-widest font-sans font-bold opacity-60">Business Training</span>
+                   <span className="text-3xl font-display text-gold font-bold">Hands</span>
+                  <span className="text-[10px] uppercase tracking-widest font-sans font-bold opacity-60">on Training</span>
                 </div>
               </div>
             </div>
