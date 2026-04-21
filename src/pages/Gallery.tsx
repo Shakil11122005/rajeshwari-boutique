@@ -15,7 +15,7 @@ export const Gallery = () => {
 
   // Mock data as fallback
   const mockItems = [
-    { _id: '1', imageUrl: 'https://picsum.photos/seed/blouse-1/600/800', category: 'tailoring', title: 'Silk Bridal Blouse' },
+    { _id: '1', imageUrl: 'https://pisum.photos/seed/blouse-1/600/800', category: 'tailoring', title: 'Silk Bridal Blouse' },
     { _id: '2', imageUrl: 'https://picsum.photos/seed/aari-1/600/800', category: 'aari', title: 'Heavy Zardosi Work' },
     { _id: '3', imageUrl: 'https://picsum.photos/seed/training-1/600/800', category: 'training', title: 'Aari Basic Batch' },
     { _id: '4', imageUrl: 'https://picsum.photos/seed/blouse-2/600/800', category: 'tailoring', title: 'Velvet Design' },
