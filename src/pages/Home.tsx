@@ -101,7 +101,7 @@ export const Home = () => {
                 role: "Customer"
               },
               { 
-                text: "Joining the Aari training was the best decision. The instructors are so patient and skilled. I now run my own small business.",
+                text: "Joining the Aari training was the best decision. The instructors are so patient and skilled.",
                 author: "Karthika",
                 role: "Student"
               }
