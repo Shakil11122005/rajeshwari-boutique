@@ -72,8 +72,8 @@ export const Services = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 relative z-10">
-            <img src="https://picsum.photos/seed/aari-sample-1/400/500" alt="Work 1" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
-            <img src="https://picsum.photos/seed/aari-sample-2/400/500" alt="Work 2" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
+            <img src="/public/images/aari-work-1.jpeg" alt="Work 1" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
+            <img src="/public/images/aari-work-2.jpeg" alt="Work 2" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
           </div>
         </div>
       </div>
