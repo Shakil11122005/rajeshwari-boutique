@@ -127,7 +127,7 @@ export const Contact = () => {
                 className="btn-outline-royal w-full border-gold text-gold flex items-center justify-center gap-2 group text-sm"
               >
                 <Star size={18} className="group-hover:fill-gold transition-colors" />
-                Leave a Review
+                Leave a Review 
               </a>
             </div>
           </div>
