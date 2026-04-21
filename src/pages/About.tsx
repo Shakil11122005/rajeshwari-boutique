@@ -21,7 +21,7 @@ export const About = () => (
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-1/2 relative">
           <div className="bg-teal/10 w-full h-[500px] rounded-3xl relative z-0 translate-x-6 translate-y-6 border-2 border-teal/20"></div>
-          <img src="""https://i.pinimg.com/originals/f8/2a/12/f82a1268a0e6e2dbee58f04a7a46bfaf.jpg""" alt="Founder Work" className="absolute inset-0 w-full h-[500px] object-cover rounded-3xl z-10 shadow-2xl border-2 border-magenta/20" referrerPolicy="no-referrer" />
+          <img src="""https://picsum.photos/seed/tailoring-boutique/800/1000""" alt="Founder Work" className="absolute inset-0 w-full h-[500px] object-cover rounded-3xl z-10 shadow-2xl border-2 border-magenta/20" referrerPolicy="no-referrer" />
         </motion.div>
       </div>
 
