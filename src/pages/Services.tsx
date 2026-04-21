@@ -17,10 +17,10 @@ export const Services = () => {
       features: ["Custom Bridal Patterns", "Premium Materials", "Intricate Detailing", "Unique Themes"]
     },
     {
-      title: "Training Programs",
+      title: "Training",
       icon: GraduationCap,
       desc: "Professional coaching for women to master the art of tailoring and embroidery.",
-      features: ["Flexible Batches", "Practical Focus", "Certification", "Business Guidance"]
+      features: ["Flexible Batches", "Practical Focus", "Hands-on Training", "Friendly Approach"]
     }
   ];
 
