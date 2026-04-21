@@ -21,7 +21,7 @@ export const About = () => (
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-1/2 relative">
           <div className="bg-teal/10 w-full h-[500px] rounded-3xl relative z-0 translate-x-6 translate-y-6 border-2 border-teal/20"></div>
-          <img src="https://chatgpt.com/s/m_69e715571bcc8191b8dc9679a8dbdca8" alt="Founder Work" className="absolute inset-0 w-full h-[500px] object-cover rounded-3xl z-10 shadow-2xl border-2 border-magenta/20" referrerPolicy="no-referrer" />
+          <img src=""D:\rajeshwari-boutique\ChatGPT Image Apr 21, 2026, 11_42_12 AM.png"" alt="Founder Work" className="absolute inset-0 w-full h-[500px] object-cover rounded-3xl z-10 shadow-2xl border-2 border-magenta/20" referrerPolicy="no-referrer" />
         </motion.div>
       </div>
 
