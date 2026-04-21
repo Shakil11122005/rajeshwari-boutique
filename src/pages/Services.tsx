@@ -72,8 +72,8 @@ export const Services = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 relative z-10">
-           <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=500&fit=crop" alt="Aari Work 1" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
-<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=500&fit=crop" alt="Aari Work 2" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
+           <img src=""WhatsApp Image 2026-04-21 at 10.51.36 PM.jpeg" alt="Aari Work 1" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
+           <img src="WhatsApp Image 2026-04-21 at 10.51.37 PM.jpeg" alt="Aari Work 2" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
           </div>
         </div>
       </div>
