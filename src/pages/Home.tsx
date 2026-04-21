@@ -43,7 +43,7 @@ export const Home = () => {
             </p>
             <div className="flex flex-wrap gap-6 justify-center">
               <Link to="/gallery" className="btn-royal text-sm px-10">Explore Collection</Link>
-              <Link to="/training" className="btn-outline-royal text-sm px-10">Academy Admission</Link>
+              <Link to="/training" className="btn-outline-royal text-sm px-10">Training</Link>
             </div>
           </motion.div>
         </div>
@@ -62,7 +62,7 @@ export const Home = () => {
             {[
                { icon: Scissors, title: "Designer Blouses", desc: "Expert tailoring that blends traditional silhouettes with modern comfort and perfect fit.", delay: 0.1 },
                { icon: Sparkles, title: "Royal Aari Work", desc: "Heavy bridal embroidery using premium beads and zardosi for a majestic presence.", delay: 0.2 },
-               { icon: GraduationCap, title: "Fashion Academy", desc: "Empowering women with professional certifications and business-focused training.", delay: 0.3 }
+               { icon: GraduationCap, title: "Fashion Design Training", desc: "Empowering women with professional development and Career-focused training.", delay: 0.3 }
             ].map((svc, i) => (
               <motion.div
                 key={i}
@@ -134,7 +134,7 @@ export const Home = () => {
           <h2 className="font-brand text-6xl text-gold mb-8 drop-shadow-md underline decoration-gold/30">Ready to Shine?</h2>
           <p className="text-white mb-12 font-display italic text-xl opacity-90">Consult with our expert designers today for personalized royal styling.</p>
           <Link to="/contact" className="btn-outline-royal border-white text-white hover:bg-white hover:text-magenta px-12 block md:inline-block">
-            Book Appointment
+            Contact
           </Link>
         </div>
       </section>
