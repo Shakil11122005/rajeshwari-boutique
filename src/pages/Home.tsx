@@ -98,12 +98,12 @@ export const Home = () => {
               { 
                 text: "I never visited to her shop but she satisfied me with her work each and every time.Either suit or blouse she is perfect and make me happy always. Definitely recommended!",
                 author: "Priyanka",
-                role: "Client"
+                role: "Customer"
               },
               { 
                 text: "Joining the Aari training was the best decision. The instructors are so patient and skilled. I now run my own small business.",
-                author: "Anita Sharma",
-                role: "Training Student"
+                author: "Karthika",
+                role: "Student"
               }
             ].map((t, idx) => (
               <motion.div 
