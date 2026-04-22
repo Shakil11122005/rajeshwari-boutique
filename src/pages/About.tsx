@@ -14,15 +14,15 @@ export const About = () => (
             <p>Our founder believed that fashion is not just about clothes; it's about confidence and empowering women. This philosophy drives our training center, where we've helped hundreds of women gain financial independence through skill-building.</p>
           </div>
           <div className="mt-12 flex gap-12">
-            <div><span className="block text-4xl font-display text-magenta font-bold">10+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Years Experience</span></div>
+            <div><span className="block text-4xl font-display text-magenta font-bold">16+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Years Experience</span></div>
             <div><span className="block text-4xl font-display text-magenta font-bold">500+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Happy Clients</span></div>
             <div><span className="block text-4xl font-display text-magenta font-bold">1000+</span><span className="text-[10px] uppercase tracking-widest text-gold font-bold font-sans">Design Collections</span></div>
           </div>
         </motion.div>
-        <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-1/2 relative">
-          <div className="bg-teal/10 w-full h-[500px] rounded-3xl relative z-0 translate-x-6 translate-y-6 border-2 border-teal/20"></div>
-          <img src="/images/rajeshwari-logo.jpg" alt="Rajeshwari Boutique & Aari Works Logo" className="absolute inset-0 w-full h-[500px] object-contain rounded-3xl z-10 shadow-2xl border-2 border-magenta/20 bg-[#3a0a1a] p-8" />
-        </motion.div>
+        <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="w-full lg:w-1/2 relative">
+  <div className="bg-teal/10 w-full h-[300px] lg:h-[500px] rounded-3xl relative z-0 translate-x-6 translate-y-6 border-2 border-teal/20"></div>
+  <img src="/images/rajeshwari-logo.jpg" alt="Rajeshwari Boutique & Aari Works Logo" className="absolute inset-0 w-full h-[300px] lg:h-[500px] object-contain rounded-3xl z-10 shadow-2xl border-2 border-magenta/20 bg-[#3a0a1a] p-8" />
+</motion.div>
       </div>
 
       <div className="bg-teal-dark p-20 text-center rounded-[3rem] shadow-2xl relative overflow-hidden">

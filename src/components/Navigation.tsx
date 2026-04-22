@@ -104,7 +104,7 @@ export const Footer = () => {
             <span className="font-display text-[10px] tracking-[0.4em] uppercase text-gold font-bold">Boutique</span>
           </div>
           <p className="text-white/70 text-sm italic font-display leading-relaxed">
-            Celebrating the vibrant heritage of Indian fashion since 2015. Bringing intricate Aari artistry to every celebration.
+            Celebrating the vibrant heritage of Indian fashion since 2010. Bringing intricate Aari artistry to every celebration.
           </p>
         </div>
         
