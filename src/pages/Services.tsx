@@ -62,7 +62,7 @@ export const Services = () => {
         <div className="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-teal-dark p-12 text-cream rounded-3xl shadow-2xl overflow-hidden relative">
           <div className="absolute top-0 right-0 w-64 h-64 bg-magenta/5 rounded-full -mr-32 -mt-32"></div>
           <div className="relative z-10">
-            <h2 className="text-4xl text-gold mb-8 font-brand drop-shadow-md">Specialists in Bridal Art</h2>
+            <h2 className="text-4xl text-gold mb-8 font-brand drop-shadow-md">Specialists in Bridal Arts</h2>
             <p className="italic opacity-80 leading-relaxed mb-10 font-sans text-lg">
               We specialize in creating the most stunning bridal blouses with heavy Aari work that complements your wedding saree perfectly. From traditional motifs to contemporary patterns, our artisans bring your vision to life.
             </p>
@@ -71,7 +71,7 @@ export const Services = () => {
               <div className="flex items-center text-[10px] uppercase tracking-widest font-bold"><ShieldCheck className="mr-3 text-gold" size={20} /> Royal Quality</div>
             </div>
           </div>
-         <div className="grid grid-cols-2 gap-6 relative z-10">
+          <div className="grid grid-cols-2 gap-6 relative z-10">
             <img src="/images/aari-work-1.jpeg" alt="Bridal Aari Work" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" />
             <img src="/images/aari-work-2.jpeg" alt="Bridal Aari Detail" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" />
           </div>
