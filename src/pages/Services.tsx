@@ -74,9 +74,8 @@ export const Services = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 relative z-10">
-           <img src="/images/aari-work-1.jpeg" alt="Bridal Aari Work" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" />
-            <img src="/images/aari-work-2.jpeg" alt="Bridal Aari Detail" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" />
-          </div>
+            <img src={aariWork1} alt="Bridal Aari Work" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" />
+            <img src={aariWork2} alt="Bridal Aari Detail" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" />
           </div>
         </div>
       </div>
