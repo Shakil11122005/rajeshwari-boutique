@@ -15,7 +15,7 @@ export const Gallery = () => {
 
   // Mock data as fallback
   const mockItems = [
-    { _id: '1', imageUrl: 'https://picsum.photos/seed/blouse-1/600/800', category: 'tailoring', title: 'Silk Bridal Blouse' },
+    { _id: '1', imageUrl: 'https://drive.google.com/uc?id=19t2WHuWSwowmHGdXx4eFWvmQDSiXKs-b', category: 'tailoring', title: 'Silk Bridal Blouse' },
     { _id: '2', imageUrl: 'https://picsum.photos/seed/aari-1/600/800', category: 'aari', title: 'Heavy Zardosi Work' },
     { _id: '3', imageUrl: 'https://picsum.photos/seed/training-1/600/800', category: 'training', title: 'Aari Basic Batch' },
     { _id: '4', imageUrl: 'https://picsum.photos/seed/blouse-2/600/800', category: 'tailoring', title: 'Velvet Design' },
@@ -57,11 +57,10 @@ export const Gallery = () => {
             <button
               key={cat.id}
               onClick={() => setFilter(cat.id)}
-              className={`px-10 py-3 text-[10px] uppercase tracking-[0.3em] font-bold border-2 transition-all duration-500 rounded-full ${
-                filter === cat.id 
-                  ? 'bg-magenta text-white border-magenta shadow-xl scale-110' 
+              className={`px-10 py-3 text-[10px] uppercase tracking-[0.3em] font-bold border-2 transition-all duration-500 rounded-full ${filter === cat.id
+                  ? 'bg-magenta text-white border-magenta shadow-xl scale-110'
                   : 'text-teal-dark border-teal/20 hover:border-gold hover:text-gold'
-              }`}
+                }`}
             >
               {cat.name}
             </button>
@@ -80,9 +79,9 @@ export const Gallery = () => {
                 exit={{ opacity: 0, scale: 0.9 }}
                 className="group relative overflow-hidden bg-white aspect-[3/4] rounded-3xl border border-teal/10 shadow-lg hover:shadow-2xl transition-shadow"
               >
-                <img 
-                  src={item.imageUrl} 
-                  alt={item.title} 
+                <img
+                  src={item.imageUrl}
+                  alt={item.title}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
