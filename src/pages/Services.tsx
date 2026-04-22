@@ -71,9 +71,9 @@ export const Services = () => {
               <div className="flex items-center text-[10px] uppercase tracking-widest font-bold"><ShieldCheck className="mr-3 text-gold" size={20} /> Royal Quality</div>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6 relative z-10">
-           <img src="WhatsApp Image 2026-04-21 at 10.51.36 PM.jpeg" alt="Aari Work 1" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
-           <img src="WhatsApp Image 2026-04-21 at 10.51.37 PM.jpeg" alt="Aari Work 2" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" referrerPolicy="no-referrer" />
+         <div className="grid grid-cols-2 gap-6 relative z-10">
+            <img src="/images/aari-work-1.jpeg" alt="Bridal Aari Work" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" />
+            <img src="/images/aari-work-2.jpeg" alt="Bridal Aari Detail" className="w-full h-56 object-cover rounded-2xl border-2 border-gold/20 shadow-xl" />
           </div>
         </div>
       </div>
