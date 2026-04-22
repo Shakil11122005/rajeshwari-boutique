@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import gallery1 from '../assets/gallery-1.jpg';
+import gallery1 from '../assets/gallery/gallery-1.jpg';
+import gallery2 from '../assets/gallery/gallery-2.jpg';
+import gallery3 from '../assets/gallery/gallery-3.jpg';
+import gallery4 from '../assets/gallery/gallery-4.jpg';
+import gallery5 from '../assets/gallery/gallery-5.jpg';
+import gallery6 from '../assets/gallery/gallery-6.jpg';
 
 const CATEGORIES = [
   { id: 'all', name: 'All Collection' },
@@ -17,11 +22,11 @@ export const Gallery = () => {
   // Mock data as fallback
   const mockItems = [
     { _id: '1', imageUrl: gallery1, category: 'tailoring', title: 'Silk Bridal Blouse' },
-    { _id: '2', imageUrl: 'https://picsum.photos/seed/aari-1/600/800', category: 'aari', title: 'Heavy Zardosi Work' },
-    { _id: '3', imageUrl: 'https://picsum.photos/seed/training-1/600/800', category: 'training', title: 'Aari Basic Batch' },
-    { _id: '4', imageUrl: 'https://picsum.photos/seed/blouse-2/600/800', category: 'tailoring', title: 'Velvet Design' },
-    { _id: '5', imageUrl: 'https://picsum.photos/seed/aari-2/600/800', category: 'aari', title: 'Peacock Motif Aari' },
-    { _id: '6', imageUrl: 'https://picsum.photos/seed/training-2/600/800', category: 'training', title: 'Tailoring Workshop' },
+    { _id: '2', imageUrl: gallery2, category: 'aari', title: 'Heavy Zardosi Work' },
+    { _id: '3', imageUrl: gallery3, category: 'training', title: 'Aari Basic Batch' },
+    { _id: '4', imageUrl: gallery4, category: 'tailoring', title: 'Velvet Design' },
+    { _id: '5', imageUrl: gallery5, category: 'aari', title: 'Peacock Motif Aari' },
+    { _id: '6', imageUrl: gallery6, category: 'training', title: 'Tailoring Workshop' },
   ];
 
   useEffect(() => {
