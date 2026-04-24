@@ -20,9 +20,21 @@ export const Navbar = () => {
     <nav className="fixed w-full z-50 bg-magenta border-b-2 border-gold shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          <Link to="/" className="flex flex-col items-center">
-             <span className="font-brand text-4xl leading-none text-white">Rajeshwari</span>
-             <span className="font-display text-[9px] tracking-[0.4em] uppercase text-gold -mt-1 font-bold">Boutique</span>
+          <Link to="/" className="flex items-center gap-3">
+             <img 
+               src="/boutique-logo.png" 
+               alt="Rajeshwari Boutique Logo" 
+               className="h-14 w-14 object-contain brightness-110"
+               onError={(e) => {
+                 // Fallback to text if image hasn't been uploaded yet
+                 e.currentTarget.style.display = 'none';
+                 e.currentTarget.parentElement?.querySelector('.logo-text-fallback')?.classList.remove('hidden');
+               }}
+             />
+             <div className="flex flex-col logo-text-fallback hidden">
+                <span className="font-brand text-3xl leading-none text-white">Rajeshwari</span>
+                <span className="font-display text-[8px] tracking-[0.4em] uppercase text-gold -mt-1 font-bold">Boutique</span>
+             </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -49,9 +61,12 @@ export const Navbar = () => {
 
 
           {/* Mobile Toggle */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center space-x-6">
+            <a href="tel:+919698615411" className="text-white hover:text-gold transition-colors">
+              <Phone size={24} />
+            </a>
             <button onClick={() => setIsOpen(!isOpen)} className="text-white">
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
+              {isOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
           </div>
         </div>
@@ -90,6 +105,24 @@ export const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      {/* Floating Call Button for Mobile */}
+      <div className="md:hidden fixed bottom-8 right-6 z-[60]">
+        <motion.a
+          href="tel:+919698615411"
+          initial={{ scale: 0, opacity: 0, y: 20 }}
+          animate={{ scale: 1, opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.5 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="bg-magenta p-4 rounded-full shadow-[0_10px_30px_rgba(136,14,79,0.5)] border-2 border-gold flex items-center justify-center text-white relative group"
+        >
+          <span className="absolute -top-12 right-0 bg-white text-magenta text-[10px] font-bold py-1 px-3 rounded-lg shadow-md border border-gold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap uppercase tracking-widest pointer-events-none">
+            Call Us Now
+          </span>
+          <Phone size={28} strokeWidth={2.5} />
+          <span className="absolute inset-0 rounded-full bg-magenta animate-ping -z-10 opacity-40"></span>
+        </motion.a>
+      </div>
     </nav>
   );
 };
@@ -100,11 +133,22 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-12">
         <div className="space-y-4">
           <div className="flex flex-col">
-            <span className="font-brand text-5xl leading-none text-white">Rajeshwari</span>
-            <span className="font-display text-[10px] tracking-[0.4em] uppercase text-gold font-bold">Boutique</span>
+            <img 
+              src="/boutique-logo.png" 
+              alt="Logo" 
+              className="h-24 w-24 object-contain mb-2"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.parentElement?.querySelector('.footer-logo-text')?.classList.remove('hidden');
+              }}
+            />
+            <div className="footer-logo-text hidden flex flex-col">
+              <span className="font-brand text-5xl leading-none text-white">Rajeshwari</span>
+              <span className="font-display text-[10px] tracking-[0.4em] uppercase text-gold font-bold">Boutique</span>
+            </div>
           </div>
           <p className="text-white/70 text-sm italic font-display leading-relaxed">
-            Celebrating the vibrant heritage of Indian fashion since 2010. Bringing intricate Aari artistry to every celebration.
+            Celebrating the vibrant heritage of Indian fashion since 2015. Bringing intricate Aari artistry to every celebration.
           </p>
         </div>
         
