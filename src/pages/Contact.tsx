@@ -92,10 +92,11 @@ export const Contact = () => {
 
         <div className="mt-24 h-[400px] bg-cream border-2 border-magenta/20 shadow-2xl relative rounded-3xl overflow-hidden">
            <iframe 
-            src="https://www.google.com/maps?q=Rajeshwari+boutique+%26+aari+work,+RVC5%2BWMX,+Mettur,+Tamil+Nadu+636404&output=embed" 
+            src="https://maps.google.com/maps?width=100%25&height=400&hl=en&q=RVC5%2BWMX+Mettur+Tamil+Nadu+636404&t=&z=16&ie=UTF8&iwloc=B&output=embed" 
             className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700"
             title="Boutique Location"
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
